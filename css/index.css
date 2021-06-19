@@ -93,6 +93,7 @@
     color:var(--blanco);
 }
 
+
 /*----ABOUT ME----*/
 
 .about__title:after,
@@ -309,8 +310,10 @@
     color:var(--blanco);
 }
 .arrow__up{
-    color:var(--blanco);
     margin-right: 3.5rem;
+}
+.arrow__up i {
+    color:var(--blanco);
 }
 .footer__line{
     margin-top: 2rem;
