@@ -1,0 +1,323 @@
+@import url(../css/estilosGlobales.css);
+
+.header{
+    background-image: url(../img/Imagenes/laptoppng.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    /* width:100%;
+    position: absolute;
+    z-index:100;
+    top:0; */
+} 
+.navbar__menu{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:1.5rem 0;
+
+}
+.navbar__logo{
+    display:flex;
+    align-items: center;
+    font-weight: bold;
+}
+.navbar__logo::before{
+    content:"<";
+    color:var(--waveColor);
+    font-size: 3rem;
+}
+.navbar__logo::after{
+    content:"/>";
+    color:var(--waveColor);
+    font-size: 3rem;
+}
+.navbar__title{
+    font-size: 2.4rem;
+}
+.navbar__title-link{
+    color:var(--blanco);
+}
+.navbar__link{
+    display: flex;
+    column-gap: 2rem;
+}
+.navbar__links:link,
+.navbar__links:visited{
+    color:var(--blanco);
+    font-size: 1.5rem;
+    border-bottom:5px solid transparent;
+}
+.navbar__links:active,
+.navbar__links:hover{
+    border-bottom:2px solid var(--waveColor);
+}
+.title{
+   display:flex;
+   justify-content: space-around;
+   align-items: center;
+   gap:2rem;
+}
+.title__image img{
+    margin-top:1rem;
+    /* margin-left:3rem; */
+    width: 100%;
+}
+.title__description{
+    font-size: 6rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: 4rem;
+}
+.subtitle__description{
+    font-size:3.5rem;
+    color:var(--waveColor);
+}
+.media{
+    display: flex;
+    gap:4rem;
+    margin-top:1rem;
+}
+.media .github{
+    color:var(--negro);
+}
+.media a{
+    font-size:3rem;
+    color:var(--blanco);
+}
+.arrow__down{
+    text-align: center;
+    margin-top:8rem;
+}
+.arrow__down i{
+    color:var(--blanco);
+}
+
+/*----ABOUT ME----*/
+
+.about__title:after,
+.projects__title:after,
+.contact__title:after{
+    content: "";
+    display: block;
+    width: 140px;
+    height: 3px;
+    background: var(--waveColor);
+    margin: 10px auto 40px;
+  }
+.about__grid{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+}
+.about__description{
+    padding-right:5rem;
+    text-align: left;
+}
+.about__description h3{
+    margin-bottom:2rem;
+}
+.about__description p{
+    margin-bottom: 5rem;
+}
+/* .about__image img{
+    margin-top: 2rem;
+    width:40%;
+} */
+.skills{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr) ;
+    gap:1rem;
+}
+.skills__title{
+    grid-column:span 3;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.skills__items {
+    background: #441e914b;
+    padding:25px;
+    border-radius: 15px;
+    color:#8c8c8f;
+    transition: all 0.3s ease-in-out;
+}
+.skills__items i{
+    font-size: 6rem;
+}
+.skills__items:nth-child(2):hover i{
+    color:#ec6231;
+}
+.skills__items:nth-child(3):hover i{
+    color:#1900FF;
+}
+.skills__items:nth-child(4):hover i{
+    color:#d6da0e;
+}
+.skills__items:nth-child(5):hover i{
+    color:#028dff;
+}
+.skills__items:nth-child(6):hover i{
+    color:#d80e0e
+}
+.skills__items:nth-child(7):hover i{
+    color:#ec6231;
+}
+.skills__items:nth-child(8):hover i{
+    color:#5E17EB;
+}
+.skills__name{
+    font-size: 17px;
+}
+.button__file i {
+    font-size: 2.5rem;
+    margin-left:1rem;
+}
+.button__file{
+    padding: 1.5rem 2rem 1.5rem 2rem;
+    border: 3px solid var(--blanco);
+    border-radius: 20px;
+    color:var(--blanco);
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.4s ;
+}
+.button__file:hover{
+    background: var(--waveColor);
+    border: 3px solid var(--waveColor);
+    padding: 1.5rem 4rem 1.5rem 4rem;
+}
+/*----PROYECTOS----*/
+.projects__title{
+    margin-bottom: 5rem;
+}
+.projects__grid{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:2rem
+}
+.projects__card{
+    background: #441e914b;
+    padding: 14rem;
+}
+/*----CONTACTAME----*/
+.contact__form {
+    width: 50%;
+}
+.form {
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.contact__label{
+    color: var(--blanco);
+    text-align: left;
+    padding-right: 2rem;
+}
+.contact__input{
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+}
+.button{
+    background: #441e914b;
+    border:none;
+    padding:1.5rem;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    color:var(--blanco);
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+.button:hover{
+    background: var(--waveColor);
+}
+.contact__text{
+    height: 20rem;
+}
+.contact__title{
+    margin-bottom: 2.5rem;
+}
+.contact__info{
+    margin-bottom:7rem;
+    line-height:2;
+}
+
+/*----FOOTER---*/
+.contact__social{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact__social .contact__social-items{
+    flex-direction: row;
+}
+.contact__social .contact__social-items .contact__icon a{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blanco);
+    overflow: hidden;
+    width: 35px;
+    height: 35px;
+    color:var(--negro);
+    margin:0 5px;
+    padding: 0;
+    font-size: 2.5rem;
+}
+.contact__social .contact__social-items:nth-child(1):hover .contact__icon a{
+    background: #000000;
+    color: var(--blanco);
+    border-radius:50%;
+}
+.contact__social .contact__social-items:nth-child(2):hover .contact__icon a{
+    background:#c32aa3;
+    color: var(--blanco);
+    border-radius:50%;
+}
+.contact__social .contact__social-items:nth-child(3):hover .contact__icon a{
+    background:#036df8;
+    color: var(--blanco);
+    border-radius:50%;
+}
+.footer__menu{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:1.5rem;
+}
+.footer__logo{
+    display:flex;
+    align-items: center;
+    font-weight: bold;
+}
+.footer__logo::before{
+    content:"<";
+    color:var(--waveColor);
+    font-size: 3rem;
+}
+.footer__logo::after{
+    content:"/>";
+    color:var(--waveColor);
+    font-size: 3rem;
+}
+.footer__title{
+    font-size: 2.4rem;
+}
+.footer__title-link{
+    color:var(--blanco);
+}
+.arrow__up{
+    color:var(--blanco);
+    margin-right: 3.5rem;
+}
+.footer__line{
+    margin-top: 2rem;
+    border: 2px solid var(--waveColor);
+}
+.footer__copy{
+    margin-top: 5rem;
+    font-size: 1.5rem;
+    text-align: center;
+}

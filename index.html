@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Portafolio de Raul Quispe Diaz, Front-End Developer. Enfoncado desarrollar con ReactJS y tegnologias relacionada. Ingresa si deseas conocer más">
+    <meta name="robots" content="index,follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/estilosGlobales.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/normalize.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar__menu">
+                <div class="navbar__logo">
+                    <p class="navbar__title">
+                        <a class="navbar__title-link"href="#">RaulQuisD</a>
+                    </p>
+                </div>
+                <!-- <div class="sidebar__menu">
+                   <i class="fas fa-bars"></i>
+                </div> -->
+                <div class="navbar__link">
+                    <a class="navbar__links" href="#">Inicio</a>
+                    <a class="navbar__links" href="#">Sobre mi</a>
+                    <a class="navbar__links" href="#">Proyectos</a>
+                    <a class="navbar__links" href="#">Contactame</a>
+                    <a class="navbar__links" href="#">Mi perfil</a>
+                </div>
+            </nav>
+            <div class="title">
+                <h2 class="title__description">Raúl
+                    <br>
+                    Quispe
+                    <br>
+                    <span class="subtitle__description">Front-end Developer</span>
+                    <div class="media">
+                        <a class="linkedin" href="https://www.linkedin.com/in/raul-kevin-quispe-diaz-63b6471a2/" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a class="instagram"href="https://www.instagram.com/rakevqdi/" target="_blank" >
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a class="github" href="https://github.com/RaulQD" target="_blank">
+                           <i class="fab fa-github-square"></i>
+                       </a>
+                    </div>
+                </h2>
+                <picture class="title__image">
+                    <source srcset="img/Imagenes/img.webp" type="image/webp">
+                    <img loading="lazy" src="img/Imagenes/img.png" alt="Ilustración dev">
+                </picture> 
+            </div>
+            <div class="arrow__down">
+                <a href="">
+                    <i class="fas fa-angle-down fa-3x"></i>
+                </a>
+             
+            </div>
+        </div>
+    </header>
+    <section class="about">
+        <div class=container>
+            <h2 class="about__title">Sobre mi</h2>
+            <div class="about__grid">
+                <div class="about__description">
+                    <!-- <picture class="about__image">
+                        <source srcset="img/Fotos/fotoblanconegro.webp" type="image/webp">
+                        <img src="img/Fotos/fotoblanconegro.png" alt="F">
+                    </picture> -->
+                    <h3 class="about__subtitle1">¿Quien soy?</h3>
+                    <h2 class="about__subtitle">Lorem ipsum dolor sit</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus deserunt doloribus maiores libero laborum incidunt blanditiis aperiam placeat.
+                    </p>
+                        <a class="button__file" href="">Descargar CV
+                            <i class="fas fa-file-download"></i>
+                        </a>
+               </div>
+               <div class="skills">
+                   <div class="skills__title">
+                       <h3 class="no-margin">Mis Hablidades:</h3>
+                    </div>
+                    <div class="skills__items">
+                        <i class="fab fa-html5"></i>
+                        <div class="skills__name">HTML5</div>
+                    </div>
+                    <div class="skills__items">
+                       <i class="fab fa-css3-alt"></i>
+                       <div class="skills__name">CSS3</div>
+                    </div>
+                    <div class="skills__items">
+                       <i class="fab fa-js-square"></i>
+                       <div class="skills__name">JavaScript</div>
+                    </div>
+                    <div class="skills__items">
+                       <i class="fab fa-react"></i>
+                       <div class="skills__name">ReactJs</div>
+                    </div>
+                    <div class="skills__items">
+                        <i class="fab fa-angular"></i>
+                        <div class="skills__name">Angular</div>
+                    </div>
+                    <div class="skills__items">
+                       <i class="fab fa-git-alt"></i>
+                       <div class="skills__name">Git</div>
+                    </div>
+                    <div class="skills__items">
+                       <i class="fab fa-bootstrap"></i>
+                       <div class="skills__name">Boostrap</div>
+                    </div>
+                </div>
+            </div> 
+        </div>         
+    </section>
+    <section class="projects">
+        <div class="container">
+            <h2 class="projects__title">Proyectos</h2>
+            <div class="projects__grid">
+                <div class="projects__card"></div>
+                <div class="projects__card"></div>
+                <div class="projects__card"></div>
+                <div class="projects__card"></div>
+                <div class="projects__card"></div>
+                <div class="projects__card"></div>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <div class="container">
+            <h2 class="contact__title">Contactame</h2>
+            <h3 class="contact__info"> Thank you to visit my portfolio. We can do anything in the Wed World
+                <br>
+                feel free to contact me!
+            </h3>
+            <form class="contact__form" action="">
+                    <div class="form">
+                        <label  class="contact__label" for="nombre">Nombre</label>
+                        <input class="contact__input" type="text" id="nombre" placeholder="Nombre">
+                    </div>
+                    <div class="form">
+                        <label  class="contact__label" for="corre">E-mail</label>
+                        <input  class="contact__input" type="email" id="correo" placeholder="Correo">
+                    </div>
+                    <div class="form">
+                        <label class="contact__label" for="mensaje">Mensaje</label>
+                        <textarea class="contact__input contact__text" id="mensaje"></textarea>
+                    </div>
+                    <div class="form">
+                        <input class="button" type="submit" value="Enviar Información">
+                    </div>
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__menu">
+                <div class="footer__logo">
+                    <p class="footer__title">
+                        <a class="footer__title-link" href="#">RaulQuisD</a>
+                    </p>
+                </div>
+                <div class="arrow__up">
+                    <i class="fas fa-angle-up fa-3x"></i>
+                  </div>
+                <div class="contact__social">
+                    <div class="contact__social-items .contact_social">
+                        <div class="contact__icon">
+                            <a class="github" href="https://github.com/RaulQD" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact__social-items">
+                        <div class="contact__icon">
+                            <a class="instagram" href="https://www.instagram.com/RaulQuisD/" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact__social-items">
+                        <div class="contact__icon">
+                            <a class="linkedin" href="" target="_blank">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__line"></div>
+            <div class="footer__copy">
+                <p><i class="far fa-copyright"></i><time datatime="2021">2021</time> - Raúl Quispe Diaz</p>
+                 <p>All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/app.js"></script>
+</body>
+</html>
