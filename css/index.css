@@ -137,9 +137,12 @@ button:hover{
     column-gap: 2rem;
 }
 .about__description{
-    padding-right:5rem;
+    padding-right:4rem;
     text-align: left;
     line-height:40px;
+}
+.about__description h2{
+    line-height: 40px;
 }
 .about__description h3, h2{
     margin-bottom: 3rem;
