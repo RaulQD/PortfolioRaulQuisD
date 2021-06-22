@@ -1,0 +1,165 @@
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*{
+    margin:0;
+    padding:0;
+}
+*, *:before, *:after {
+    box-sizing: inherit; 
+}
+
+body{
+    background: #000000;
+    font-family:"Poppins", sans-serif;
+    font-size: 1.6rem;
+    line-height:2;
+}
+a {
+    text-decoration: none;
+}
+p{
+    color:var(--blanco);
+}
+h1, h2, h3{
+    line-height: 1.2;
+}
+h1{ 
+    font-size: 3rem;
+}
+h2{
+    color:#ffffff;
+    font-family:"Poppins", sans-serif;
+    font-size: 2.5rem;
+}
+h3{
+    font-size:2rem;
+    color:#ffffff;
+}
+.container{
+    width: min(90%, 120rem);
+    margin:0 auto;
+}
+
+
+.navbar__menu{
+    padding: 20px 0;
+}
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.navbar__links-enlaces{
+    list-style: none;
+
+}
+.navbar__links .navbar__links-enlaces {
+    display: inline-block;
+    padding: 0 10px;
+}
+.navbar__links-enlaces a{
+    position: relative;
+    color: #a0a0a0;
+    letter-spacing: 0.5px;
+    padding: 0 10px;
+    transition: all 0.3s;
+}
+.navbar__links-enlaces a::after{
+    content: "";
+    position: absolute;
+    background-color: #5E17EB;
+    color:#5E17EB;
+    height: 3px;
+    width: 0;
+    left:0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+.navbar__links-enlaces a:hover{
+    color:#ffffff;
+}
+.navbar__links-enlaces a:hover::after{
+    width: 100%;
+}
+.navbar__logo{
+    display:flex;
+    align-items: center;
+    font-size: 2.4rem;
+    margin-right: auto;
+}
+.navbar__title a{
+    color:#ffffff;
+    font-weight: bold;
+}
+.navbar__logo::before{
+    content:"<";
+    color:#5E17EB;
+    font-weight: bold;
+}
+.navbar__logo::after{
+    content:"/>";
+    color:#5E17EB;
+    font-weight: bold;
+}
+button{
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 9px 25px;
+    border-radius: 50px;
+    background-color:#5E17EB;
+    border:none;
+    color:#ffffff;
+    transition: all 0.4s ease 0s;
+    cursor:pointer;
+}
+
+button:hover{
+    background-color: #7f45f3;
+}
+
+.home{
+    background-image: url(../img/Banners/laptoppng.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.home__title{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: uppercase;
+}
+.home__description{
+    font-size: 6rem;
+}
+.home__subtitle{
+    font-size: 3.5rem;
+    color:#5E17EB;
+}
+.media{
+    display: flex;
+    column-gap: 5rem;
+    margin-top: 2rem;
+}
+.media a{
+    font-size: 3rem;
+    color:#ffffff;
+}
+.media .github{
+    color:#000000;
+}
+.home__image img{
+    margin-top:1.5rem;
+    width: 100%;
+}
+.arrow__down{
+    margin-top: 8rem;
+    text-align: center;
+}
+.arrow__down i{
+    color: #ffffff;
+}

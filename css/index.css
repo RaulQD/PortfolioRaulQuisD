@@ -1,101 +1,127 @@
 @import url(../css/estilosGlobales.css);
 
-.header{
-    background-image: url(../img/Imagenes/laptoppng.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    /* width:100%;
-    position: absolute;
-    z-index:100;
-    top:0; */
-} 
 .navbar__menu{
+    padding: 20px 0;
+}
+.navbar{
     display:flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
-    margin:1.5rem 0;
-
 }
 .navbar__logo{
     display:flex;
     align-items: center;
-    font-weight: bold;
+    font-size: 2.4rem;
+    margin-right: auto;
 }
 .navbar__logo::before{
     content:"<";
     color:var(--waveColor);
-    font-size: 3rem;
+    font-weight: bold;
 }
 .navbar__logo::after{
     content:"/>";
     color:var(--waveColor);
-    font-size: 3rem;
+    font-weight: bold;
 }
-.navbar__title{
-    font-size: 2.4rem;
+.navbar__links{
+    list-style: none;
 }
-.navbar__title-link{
-    color:var(--blanco);
+.navbar__links .navbar__links-enlaces{
+    display: inline-block;
+    padding: 0 10px;
 }
-.navbar__link{
-    display: flex;
-    column-gap: 2rem;
+.navbar__links-enlaces a{
+    position:relative;
+    color:var(--gris);
+    letter-spacing: 0.5px;
+    padding: 0 10px ;
+    transition: all 0.3s;
 }
-.navbar__links:link,
-.navbar__links:visited{
-    color:var(--blanco);
-    font-size: 1.5rem;
-    border-bottom:5px solid transparent;
+.navbar__links-enlaces a::after{
+    content:"";
+    position: absolute;
+    background-color: var(--waveColor);
+    color:var(--waveColor);
+    height: 3px;
+    width: 0;
+    left:0;
+    bottom: -10px;
+    transition: 0.3s;
 }
-.navbar__links:active,
-.navbar__links:hover{
-    border-bottom:2px solid var(--waveColor);
+.navbar__links-enlaces a:hover{
+    color:#ffffff;
 }
-.title{
-   display:flex;
-   justify-content: space-around;
-   align-items: center;
-   gap:2rem;
-}
-.title__image img{
-    margin-top:1rem;
-    /* margin-left:3rem; */
+.navbar__links-enlaces a:hover::after{
     width: 100%;
 }
-.title__description{
-    font-size: 6rem;
-    text-transform: uppercase;
+.navbar__title a{
+    color:var(--blanco);
     font-weight: bold;
-    margin-left: 4rem;
 }
-.subtitle__description{
-    font-size:3.5rem;
+button{
+    font-weight:bold;
+    padding: 9px 25px;
+    border-radius: 50px;
+    background-color: #5E17EB;
+    border:none;
+    color:var(--blanco);
+    cursor:pointer;
+    transition: all 0.4s ease 0s;
+}
+button:hover{
+    background-color: #521eb9;
+}
+/*----HOME----*/
+.home{
+    background-image: url(../img/Banners/laptoppng.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.home__title{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;  
+    text-transform: uppercase;
+}
+.home__description{
+    font-size: 6rem;
+}
+.home__subtitle{
+    font-size: 3.5rem;
     color:var(--waveColor);
 }
+.home__image img{
+    margin-top: 1.5rem;
+    width:100%;
+}
 .media{
-    display: flex;
-    gap:4rem;
-    margin-top:1rem;
+    display:flex;
+    column-gap: 5rem;
+    margin-top:2rem;
+}
+.media a{
+    font-size: 3rem;
+    color:vaR(--blanco);
 }
 .media .github{
     color:var(--negro);
 }
-.media a{
-    font-size:3rem;
-    color:var(--blanco);
-}
 .arrow__down{
+    margin-top: 8rem;
     text-align: center;
-    margin-top:8rem;
 }
-.arrow__down i{
+.arrow__down i {
     color:var(--blanco);
 }
-
-
 /*----ABOUT ME----*/
 
+.about{
+    margin: 9rem 0;
+    text-align: center;
+}
 .about__title:after,
 .projects__title:after,
 .contact__title:after{
@@ -189,6 +215,10 @@
     padding: 1.5rem 4rem 1.5rem 4rem;
 }
 /*----PROYECTOS----*/
+.projects{
+    margin: 9rem 0;
+    text-align: center;
+}
 .projects__title{
     margin-bottom: 5rem;
 }
@@ -201,7 +231,12 @@
     background: #441e914b;
     padding: 14rem;
 }
+
 /*----CONTACTAME----*/
+.contact{
+    margin: 9rem 0;
+    text-align: center;
+}
 .contact__form {
     width: 50%;
 }
@@ -259,7 +294,6 @@
     justify-content: center;
     align-items: center;
     background-color: var(--blanco);
-    overflow: hidden;
     width: 35px;
     height: 35px;
     color:var(--negro);
