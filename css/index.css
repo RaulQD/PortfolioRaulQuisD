@@ -29,13 +29,12 @@
 }
 .navbar__links .navbar__links-enlaces{
     display: inline-block;
-    padding: 0 10px;
 }
 .navbar__links-enlaces a{
     position:relative;
     color:var(--gris);
     letter-spacing: 0.5px;
-    padding: 0 10px ;
+    padding: 0 10px;
     transition: all 0.3s;
 }
 .navbar__links-enlaces a::after{
@@ -94,7 +93,7 @@ button:hover{
     color:var(--waveColor);
 }
 .home__image img{
-    margin-top: 1.5rem;
+    margin-top: 2rem;
     width:100%;
 }
 .media{
@@ -140,17 +139,14 @@ button:hover{
 .about__description{
     padding-right:5rem;
     text-align: left;
+    line-height:40px;
 }
-.about__description h3{
-    margin-bottom:2rem;
+.about__description h3, h2{
+    margin-bottom: 3rem;
 }
-.about__description p{
-    margin-bottom: 5rem;
+.about__description p {
+    margin-bottom: 4rem;
 }
-/* .about__image img{
-    margin-top: 2rem;
-    width:40%;
-} */
 .skills{
     display: grid;
     grid-template-columns:repeat(3, 1fr) ;
@@ -201,7 +197,7 @@ button:hover{
     margin-left:1rem;
 }
 .button__file{
-    padding: 1.5rem 2rem 1.5rem 2rem;
+    padding: 1.5rem 2rem;
     border: 3px solid var(--blanco);
     border-radius: 20px;
     color:var(--blanco);
@@ -212,9 +208,12 @@ button:hover{
 .button__file:hover{
     background: var(--waveColor);
     border: 3px solid var(--waveColor);
-    padding: 1.5rem 4rem 1.5rem 4rem;
+    padding: 1.5rem 4rem;
 }
+
 /*----PROYECTOS----*/
+
+
 .projects{
     margin: 9rem 0;
     text-align: center;
