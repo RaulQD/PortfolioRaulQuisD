@@ -1,0 +1,35 @@
+@media( max-width : 992px ) {
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar__links .navbar__links-enlaces{
+        display:block;
+        text-align: center;
+    }
+    .home{
+        background-image:url(../img/Banners/laptoppng.webp);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    .home__title{
+        flex-direction: column;
+        text-align: center;
+    }
+    .home__image img{
+        text-align: center;
+    }
+    .media{
+        justify-content: center;
+    }
+    .media .github{
+        color:var(--blanco);
+    }
+    .about__grid{
+        grid-template-columns: 1fr;
+    }
+    .about__description{
+        padding-right: 0;
+    }
+}

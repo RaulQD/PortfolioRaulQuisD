@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="css/estilosGlobales.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/media.css" media="(max-width: 991px)">
     <link rel="stylesheet" href="css/normalize.css">
 </head>
 <body>
@@ -136,21 +137,21 @@
                 feel free to contact me!
             </h3>
             <form class="contact__form" action="">
-                    <div class="form">
-                        <label  class="contact__label" for="nombre">Nombre</label>
+                <div class="form">
+                    <label  class="contact__label" for="nombre">Nombre</label>
                         <input class="contact__input" type="text" id="nombre" placeholder="Nombre">
+                </div>
+                <div class="form">
+                    <label  class="contact__label" for="corre">E-mail</label>
+                    <input  class="contact__input" type="email" id="correo" placeholder="Correo">
+                </div>
+                <div class="form">
+                    <label class="contact__label" for="mensaje">Mensaje</label>
+                    <textarea class="contact__input contact__text" id="mensaje"></textarea>
                     </div>
-                    <div class="form">
-                        <label  class="contact__label" for="corre">E-mail</label>
-                        <input  class="contact__input" type="email" id="correo" placeholder="Correo">
-                    </div>
-                    <div class="form">
-                        <label class="contact__label" for="mensaje">Mensaje</label>
-                        <textarea class="contact__input contact__text" id="mensaje"></textarea>
-                    </div>
-                    <div class="form">
-                        <input class="button" type="submit" value="Enviar Información">
-                    </div>
+                <div class="form">
+                    <input class="button" type="submit" value="Enviar Información">
+                </div>
             </form>
         </div>
     </section>
@@ -167,23 +168,23 @@
                         <i class="fas fa-angle-up fa-3x"></i>
                     </a>
                   </div>
-                <div class="contact__social">
-                    <div class="contact__social-items .contact_social">
-                        <div class="contact__icon">
+                <div class="footer__social">
+                    <div class="footer__social-items .footer_social">
+                        <div class="footer__icon">
                             <a class="github" href="https://github.com/RaulQD" target="_blank">
                                 <i class="fab fa-github"></i>
                             </a>
                         </div>
                     </div>
-                    <div class="contact__social-items">
-                        <div class="contact__icon">
+                    <div class="footer__social-items">
+                        <div class="footer__icon">
                             <a class="instagram" href="https://www.instagram.com/RaulQuisD/" target="_blank">
                                 <i class="fab fa-instagram"></i>
                             </a>
                         </div>
                     </div>
-                    <div class="contact__social-items">
-                        <div class="contact__icon">
+                    <div class="footer__social-items">
+                        <div class="footer__icon">
                             <a class="linkedin" href="" target="_blank">
                                 <i class="fab fa-linkedin-in"></i>
                             </a>

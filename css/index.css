@@ -5,14 +5,13 @@
 }
 .navbar{
     display:flex;
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: space-between;
+
 }
 .navbar__logo{
     display:flex;
     align-items: center;
     font-size: 2.4rem;
-    margin-right: auto;
 }
 .navbar__logo::before{
     content:"<";
@@ -57,19 +56,6 @@
 .navbar__title a{
     color:var(--blanco);
     font-weight: bold;
-}
-button{
-    font-weight:bold;
-    padding: 9px 25px;
-    border-radius: 50px;
-    background-color: #5E17EB;
-    border:none;
-    color:var(--blanco);
-    cursor:pointer;
-    transition: all 0.4s ease 0s;
-}
-button:hover{
-    background-color: #521eb9;
 }
 /*----HOME----*/
 .home{
@@ -134,7 +120,7 @@ button:hover{
 .about__grid{
     display:grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 2rem;
+    gap: 2rem;
 }
 .about__description{
     padding-right:4rem;
@@ -142,13 +128,25 @@ button:hover{
     line-height:40px;
 }
 .about__description h2{
-    line-height: 40px;
+    margin:1.5rem 0;
 }
-.about__description h3, h2{
-    margin-bottom: 3rem;
+.button__file{
+    padding: 1.5rem 2rem;
+    border: 3px solid var(--blanco);
+    border-radius: 20px;
+    color:var(--blanco);
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.4s;
 }
-.about__description p {
-    margin-bottom: 4rem;
+.button__file{
+    /* display: inline-block; */
+    margin:20px 0;
+}
+.button__file:hover{
+    background: var(--waveColor);
+    border: 3px solid var(--waveColor);
+    padding: 1.5rem 4rem;
 }
 .skills{
     display: grid;
@@ -198,20 +196,6 @@ button:hover{
 .button__file i {
     font-size: 2.5rem;
     margin-left:1rem;
-}
-.button__file{
-    padding: 1.5rem 2rem;
-    border: 3px solid var(--blanco);
-    border-radius: 20px;
-    color:var(--blanco);
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: all 0.4s ;
-}
-.button__file:hover{
-    background: var(--waveColor);
-    border: 3px solid var(--waveColor);
-    padding: 1.5rem 4rem;
 }
 
 /*----PROYECTOS----*/
@@ -267,6 +251,7 @@ button:hover{
     font-weight: bold;
     text-transform: uppercase;
     transition: 0.4s;
+    cursor: pointer;
 }
 .button:hover{
     background: var(--waveColor);
@@ -283,15 +268,15 @@ button:hover{
 }
 
 /*----FOOTER---*/
-.contact__social{
+.footer__social{
     display:flex;
     justify-content: center;
     align-items: center;
 }
-.contact__social .contact__social-items{
+.footer__social .footer__social-items{
     flex-direction: row;
 }
-.contact__social .contact__social-items .contact__icon a{
+.footer__social .footer__social-items .footer__icon a{
     display:flex;
     justify-content: center;
     align-items: center;
@@ -303,17 +288,17 @@ button:hover{
     padding: 0;
     font-size: 2.5rem;
 }
-.contact__social .contact__social-items:nth-child(1):hover .contact__icon a{
+.footer__social .footer__social-items:nth-child(1):hover .footer__icon a{
     background: #000000;
     color: var(--blanco);
     border-radius:50%;
 }
-.contact__social .contact__social-items:nth-child(2):hover .contact__icon a{
+.footer__social .footer__social-items:nth-child(2):hover .footer__icon a{
     background:#c32aa3;
     color: var(--blanco);
     border-radius:50%;
 }
-.contact__social .contact__social-items:nth-child(3):hover .contact__icon a{
+.footer__social .footer__social-items:nth-child(3):hover .footer__icon a{
     background:#036df8;
     color: var(--blanco);
     border-radius:50%;
