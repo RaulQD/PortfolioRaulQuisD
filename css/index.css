@@ -58,12 +58,17 @@
     font-weight: bold;
 }
 /*----HOME----*/
-.home{
+.home__background{
     background-image: url(../img/Banners/laptoppng.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 30%;
 }
 .home__title{
     display:flex;
@@ -84,6 +89,7 @@
 }
 .media{
     display:flex;
+    justify-content: flex-start;
     column-gap: 5rem;
     margin-top:2rem;
 }
@@ -91,16 +97,7 @@
     font-size: 3rem;
     color:vaR(--blanco);
 }
-.media .github{
-    color:var(--negro);
-}
-.arrow__down{
-    margin-top: 8rem;
-    text-align: center;
-}
-.arrow__down i {
-    color:var(--blanco);
-}
+
 /*----ABOUT ME----*/
 
 .about{
@@ -128,30 +125,30 @@
     line-height:40px;
 }
 .about__description h2{
-    margin:1.5rem 0;
+    margin:25px 0;
+}
+.about__description p{
+    margin-bottom: 20px;
 }
 .button__file{
-    padding: 1.5rem 2rem;
-    border: 3px solid var(--blanco);
+    display: inline-block;
+    background: #441e914b;
+    padding: 10px 32px;
     border-radius: 20px;
-    color:var(--blanco);
+    color:#8c8c8f;
     font-weight: bold;
     text-transform: uppercase;
     transition: all 0.4s;
-}
-.button__file{
-    /* display: inline-block; */
-    margin:20px 0;
+    text-align: center;
 }
 .button__file:hover{
     background: var(--waveColor);
-    border: 3px solid var(--waveColor);
-    padding: 1.5rem 4rem;
+    color:var(--blanco);
 }
 .skills{
     display: grid;
     grid-template-columns:repeat(3, 1fr) ;
-    gap:1rem;
+    gap:1.5rem;
 }
 .skills__title{
     grid-column:span 3;

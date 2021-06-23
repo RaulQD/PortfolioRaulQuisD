@@ -1,4 +1,4 @@
-@media( max-width : 992px ) {
+@media( max-width : 992px) {
     .navbar{
         flex-direction: column;
         align-items: center;
@@ -7,29 +7,85 @@
         display:block;
         text-align: center;
     }
-    .home{
-        background-image:url(../img/Banners/laptoppng.webp);
+    .home__backbround{
+        background-image: url(../img/Banners/laptoppng.webp);
         background-size: cover;
-        background-position: center;
+        background-repeat: no-repeat;
+        background-position: center center;
         background-attachment: fixed;
     }
     .home__title{
         flex-direction: column;
         text-align: center;
     }
-    .home__image img{
-        text-align: center;
+    .home__description{
+        font-size:5rem;
+    }
+    .home__subtitle{
+        font-size: 3rem;
     }
     .media{
-        justify-content: center;
+        display: block;
+        margin-top:2rem;
     }
-    .media .github{
-        color:var(--blanco);
+    .media a{
+        margin:0 25px;
+        color:vaR(--blanco);
     }
     .about__grid{
         grid-template-columns: 1fr;
     }
     .about__description{
         padding-right: 0;
+    }
+    .about__description h2{
+        margin:20px 0;
+    }
+    .about__description p{
+        margin-bottom: 10px;
+    }
+    .button__file{
+       margin: 25px 0;
+   }
+   .skills{
+       grid-template-columns: repeat(4,1fr);
+   }
+   .skills__title{
+       grid-column: span 4;
+   }
+   .projects__grid{
+       grid-template-columns: repeat(2, 1fr);
+   }
+}
+
+@media( max-width : 768px){
+    .home__description{
+        font-size:4rem;
+    }
+    .home__subtitle{
+        font-size: 2.5rem;
+    }
+    .home__image img{
+        width:80%;
+    }
+     .about__description h2{
+        line-height: 1.5;
+    }
+    .skills{
+        grid-template-columns:repeat(3,1fr);
+    }
+    .skills__title{
+        grid-column: span 3;
+    }
+    .projects__grid{
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width : 480px) {
+    .about__description h2{
+        line-height: 1.2;
+    }
+    .skills{
+        grid-template-columns:repeat(2,1fr);
     }
 }
