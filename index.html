@@ -26,11 +26,11 @@
             <!-- <div class="sidebar__menu">
                 <i class="fas fa-bars"></i>
             </div> -->
-            <ul class="navbar__links">
-                <li class="navbar__links-enlaces"><a href="">Home</a></li>
-                <li class="navbar__links-enlaces"><a href="">Sobre mi</a></li>
-                <li class="navbar__links-enlaces"><a href="">Proyectos</a></li>
-                <li class="navbar__links-enlaces"><a href="">Contactame</a></li>
+            <ul class="navbar__link">
+                <li class="navbar__links navbar__links--active"><a href="">Home</a></li>
+                <li class="navbar__links"><a href="">Sobre mi</a></li>
+                <li class="navbar__links"><a href="">Proyectos</a></li>
+                <li class="navbar__links"><a href="">Contactame</a></li>
             </ul>
         </div>
     </nav>
@@ -60,11 +60,16 @@
                     <img loading="lazy" src="img/Imagenes/img.png" alt="Ilustración dev">
                 </picture> 
             </div>
+            <div class="arrow__down">
+                <a href="">
+                    <i class="fas fa-angle-down fa-3x"></i>
+                </a>
+              </div>
         </div>
     </section>
     <section class="about">
         <div class=container>
-            <h2 class="about__title">Sobre mi</h2>
+            <h2 class="about__title">About me</h2>
             <div class="about__grid">
                 <div class="about__description">
                     <h3>¿Quien soy?</h3>
@@ -114,7 +119,7 @@
     </section>
     <section class="projects">
         <div class="container">
-            <h2 class="projects__title">Proyectos</h2>
+            <h2 class="projects__title">Projects</h2>
             <div class="projects__grid">
                 <div class="projects__card"></div>
                 <div class="projects__card"></div>
@@ -127,28 +132,52 @@
     </section>
     <section class="contact">
         <div class="container">
-            <h2 class="contact__title">Contactame</h2>
-            <h3 class="contact__info"> Thank you to visit my portfolio. We can do anything in the Wed World
-                <br>
-                feel free to contact me!
-            </h3>
-            <form class="contact__form" action="">
-                <div class="form">
-                    <label  class="contact__label" for="nombre">Nombre</label>
-                        <input class="contact__input" type="text" id="nombre" placeholder="Nombre">
-                </div>
-                <div class="form">
-                    <label  class="contact__label" for="corre">E-mail</label>
-                    <input  class="contact__input" type="email" id="correo" placeholder="Correo">
-                </div>
-                <div class="form">
-                    <label class="contact__label" for="mensaje">Mensaje</label>
-                    <textarea class="contact__input contact__text" id="mensaje"></textarea>
+            <div class="contact__content">
+                <h2>Contact me</h2>
+                <h3 class="contact__subtitle"> Thank you to visit my portfolio. We can do anything in the Wed World
+                    <br>
+                    feel free to contact me!
+                </h3>
+            </div>
+            <div class="contact__flex">
+                <div class="contact__info">
+                    <div class="contact__box">
+                        <div class="contact__icon"><i class="far fa-envelope"></i></div>
+                        <div class="contact__text">
+                            <h3 class="contact__text--title">E-mail Address</h3>
+                            <p>raul.g.quispe@gmail.com</p>
+                        </div>
                     </div>
-                <div class="form">
-                    <input class="button" type="submit" value="Enviar Información">
+                    <div class="contact__box">
+                        <div class="contact__icon"><i class="fas fa-phone"></i></div>
+                        <div class="contact__text">
+                            <h3 class="contact__text--title">Phone Number</h3>
+                            <p>+51 961-450-431</p>
+                            <p>+51 000-000-000</p>
+                        </div>
+                    </div>
                 </div>
-            </form>
+                <div class="contact__data">
+                    <h2>Send a message</h2>
+                    <form action="">
+                        <div class="form">
+                            <label  class="contact__label" for="nombre">Your Name:</label>
+                            <input class="contact__input" type="text" id="nombre" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form">
+                            <label  class="contact__label" for="corre">E-mail:</label>
+                            <input  class="contact__input" type="email" id="correo" placeholder="Enter your E-mail" required>
+                        </div>
+                        <div class="form">
+                            <label class="contact__label" for="mensaje">Message:</label>
+                            <textarea class="contact__input contact__textarea" id="mensaje" placeholder="Type your message" required></textarea>
+                        </div>
+                        <div class="form__button">
+                            <input class="button" type="submit" value="Enviar">
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
     </section>
     <footer class="footer">
