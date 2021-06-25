@@ -277,18 +277,17 @@
 .contact__data{
     background: var(--blanco);
     width:50%;
-    padding:35px 40px;
+    padding:30px 35px;
     border-radius: 20px;
 }
 .contact__data h2{
     color:var(--negro);
     text-transform: uppercase;
+    margin:0;
 }
 .form{
     display:flex;
     flex-direction: column;
-    margin-bottom: 1rem;
-    /* border: 2px solid #646464d8; */
     padding: 20px;
     border-radius: 20px;
 }
@@ -309,7 +308,7 @@
 .form__button{
     display: flex;
     justify-content: flex-end;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 .button{
     background: #441e914b;
