@@ -16,8 +16,8 @@
         flex-direction: column;
         text-align: center;
     }
-    .home__description{
-        font-size:5rem;
+    .home__description .home__name{
+        font-size: 5rem;
     }
     .home__subtitle{
         font-size: 3rem;

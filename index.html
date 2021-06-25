@@ -10,9 +10,17 @@
     <link rel="shortcut icon" href="img/Fotos/fotocolores.png">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+    <link rel="preload" href="css/estilosGlobales.css" as="style">
     <link rel="stylesheet" href="css/estilosGlobales.css">
+
+    <link rel="preload" href="css/index.css" as="style">
     <link rel="stylesheet" href="css/index.css">
+
+    <link rel="preload" href="css/media.css" as="style">
     <link rel="stylesheet" href="css/media.css" media="(max-width: 991px)">
+
+    <link rel="preload" href="css/normalize.css" as="style">
     <link rel="stylesheet" href="css/normalize.css">
 </head>
 <body>
@@ -38,23 +46,25 @@
         <div class="home__background"></div>
         <div class="container">
             <div class="home__title">
-                <h2 class="home__description">Raul
-                    <br>
-                    Quispe
-                    <br>
-                    <span class="home__subtitle">Front-end Developer</span>
+                <div class="home__description">
+                        <h2 class="home__name">Raul
+                            <br>
+                            Quispe
+                            <br>
+                            <span class="home__subtitle">Front-end Developer</span>
+                        </h2>
                     <div class="media">
                         <a class="linkedin" href="https://www.linkedin.com/in/raul-kevin-quispe-diaz-63b6471a2/" target="_blank">
                             <i class="fab fa-linkedin"></i>
                         </a>
-                        <a class="instagram"href="https://www.instagram.com/rakevqdi/" target="_blank" >
+                        <a class="instagram" href="https://www.instagram.com/rakevqdi/" target="_blank" >
                             <i class="fab fa-instagram"></i>
                         </a>
                         <a class="github" href="https://github.com/RaulQD" target="_blank">
                             <i class="fab fa-github"></i>
                         </a>
                     </div>
-                </h2>
+                </div>
                 <picture class="home__image">
                     <source srcset="img/Imagenes/img.webp" type="image/webp">
                     <img loading="lazy" src="img/Imagenes/img.png" alt="Ilustración dev">

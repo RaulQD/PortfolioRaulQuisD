@@ -75,8 +75,9 @@
     align-items: center;  
     text-transform: uppercase;
 }
-.home__description{
+.home__description .home__name{
     font-size: 6rem;
+    margin:0;
 }
 .home__subtitle{
     font-size: 3.5rem;
@@ -90,7 +91,7 @@
     display:flex;
     justify-content: flex-start;
     column-gap: 5rem;
-    margin-top:2rem;
+    margin-top: 2rem;
 }
 .media a{
     font-size: 3rem;
