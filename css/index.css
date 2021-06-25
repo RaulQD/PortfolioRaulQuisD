@@ -98,7 +98,7 @@
 }
 .arrow__down{
     text-align: center;
-    margin-top: 5rem;
+    margin-top: 8rem;
 }
 .arrow__down i{
     color:var(--blanco);
@@ -107,10 +107,11 @@
 /*----ABOUT ME----*/
 
 .about{
-    margin: 9rem 0;
+    margin: 11rem 0;
     text-align: center;
 }
 .about__title{
+    /* margin-top: 7rem; */
     text-align: center;
 }
 .about__title:after,
