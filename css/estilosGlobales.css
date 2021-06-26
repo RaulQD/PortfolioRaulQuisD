@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 :root{
     --waveColor: #5E17EB;
@@ -5,6 +6,7 @@
     --blanco: #ffffff;
     --gris:#a0a0a0;
     --negro:#05001B;
+    --waveOscuro: #441e914b;
 }
 html {
     box-sizing: border-box;
@@ -45,6 +47,9 @@ h2{
 h3{
     font-size:2rem;
     color:var(--blanco);
+}
+section{
+    margin:9rem 0;
 }
 .container{
     width: min(90%, 120rem);
