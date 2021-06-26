@@ -94,6 +94,9 @@
     .footer__menu{
         flex-direction: column;
     }
+    .footer__social{
+        margin-top:2rem;
+    }
     .arrow__up{
         margin:0;
     }
