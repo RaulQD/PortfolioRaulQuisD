@@ -7,9 +7,6 @@
         display: block;
         text-align: center;
     }
-    /* .sidebar__menu{
-        display:flex;
-    } */
     .webp .home__background{
         background-image: url(../img/Banners/laptoppng.webp);
     }
