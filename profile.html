@@ -12,63 +12,31 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <!-- <link rel="stylesheet" href="css/estilosGlobales.css"> -->
     <link rel="stylesheet" href="css/index2.css">
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/normalize.css"> 
 </head>
 <body>
-    <nav class="navbar__menu container">
-        <div class="navbar">
-            <div class="navbar__logo">
-                <p class="navbar__title">
-                    <a href="#">RaulQuisD</a>
-                </p>
+    <nav class="navbar__menu">
+        <div class="container">
+            <div class="navbar">
+                <div class="navbar__logo">
+                    <p class="navbar__title">
+                        <a href="#">RaulQuisD</a>
+                    </p>
+                </div>
+                <ul class="navbar__link">
+                    <li class="navbar__links navbar__links--active"><a href="#">Home</a></li>
+                    <li class="navbar__links"><a href="#">About me</a></li>
+                    <li class="navbar__links"><a href="#">Projects</a></li>
+                    <li class="navbar__links"><a href="#">Contact me</a></li>
+                    <!-- <div class="closeMenu"><i class="fas fa-times"></i></div> -->
+                </ul>
+                <div class="openMenu">
+                    <i class="fas fa-bars"></i>
+                </div>
             </div>
-            <!-- <div class="sidebar__menu">
-                <i class="fas fa-bars"></i>
-            </div> -->
-            <ul class="navbar__link">
-                <li class="navbar__links navbar__links--active"><a href="">Home</a></li>
-                <li class="navbar__links"><a href="">Sobre mi</a></li>
-                <li class="navbar__links"><a href="">Proyectos</a></li>
-                <li class="navbar__links"><a href="">Contactame</a></li>
-            </ul>
         </div>
     </nav>
-    <section class="home">
-        <div class="home__background"></div>
-        <div class="container">
-            <div class="home__title">
-                <div class="home__description">
-                    <div class="home__name">
-                        <h2>Raul
-                            <br>
-                            Quispe
-                            <br>
-                            <span class="home__subtitle">Front-end Developer</span>
-                        </h2>
-                    </div>
-                    <div class="media">
-                        <a class="linkedin" href="https://www.linkedin.com/in/raul-kevin-quispe-diaz-63b6471a2/" target="_blank">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a class="instagram" href="https://www.instagram.com/rakevqdi/" target="_blank" >
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a class="github" href="https://github.com/RaulQD" target="_blank">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </div>
-                </div>
-                <picture class="home__image">
-                    <source srcset="img/Imagenes/img.webp" type="image/webp">
-                    <img loading="lazy" src="img/Imagenes/img.png" alt="Ilustración dev">
-                </picture> 
-            </div>
-            <div class="arrow__down">
-                <a href="">
-                    <i class="fas fa-angle-down fa-3x"></i>
-                </a>
-              </div>
-        </div>
-    </section>
+    <script src="js/app.js"></script>
+    <script src="https://kit.fontawesome.com/802d4ef448.js" crossorigin="anonymous"></script>
 </body>
 </html>
