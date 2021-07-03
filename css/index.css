@@ -1,10 +1,16 @@
 @import url(../css/estilosGlobales.css);
 
+
 .navbar__menu{
     padding: 20px 0;
+    position: fixed;
+    top:0;
+    width:100%;
+    background: #000000;
 }
 .navbar{
     display:flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -17,6 +23,10 @@
     display:flex;
     align-items: center;
     font-size: 2.4rem;
+} 
+.navbar__logo a{
+    color:var(--blanco);
+    font-weight: bold;
 }
 .navbar__logo::before{
     content:"<";
@@ -29,7 +39,7 @@
     font-weight: bold;
 }
 .navbar__link{
-    list-style: none;
+    list-style-type: none;
 }
 .navbar__link .navbar__links{
     display: inline-block;
@@ -65,7 +75,7 @@
 }
 /*----HOME----*/
 .home{
-    margin: 9rem 0;
+    margin:11rem 0; 
 }
 .webp .home__background{
     background-image: url(../img/Banners/laptoppng.webp);
@@ -99,6 +109,9 @@
 .home__subtitle{
     font-size: 3.5rem;
     color:var(--waveColor);
+}
+.home__subtitle span{
+    color:var(--blanco);
 }
 .home__image img{
     width:100%;
