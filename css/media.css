@@ -115,6 +115,9 @@
     .arrow__up{
         margin:0;
     }
+    .arrow__up i{
+        margin-top:0.5rem;
+    }
 }
 @media (max-width: 600px) {
     .about__description h2{
@@ -122,6 +125,12 @@
     }
 }
 @media (max-width : 480px ) {
+    .home__description .home__title{
+        font-size: 4rem;
+    }
+    .home__subtitle{
+        font-size: 2rem;
+    }
     .skills{
         grid-template-columns: repeat(2,1fr);
         
