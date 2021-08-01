@@ -1,5 +1,4 @@
-@media( max-width : 991px) {
-
+@media( max-width : 992px) {
     .navbar__link{
         width:100%;
         flex-direction: column;
@@ -8,6 +7,9 @@
     }
     .navbar__links{
         padding: 20px 0;
+    }
+    .navbar__links a{
+        font-size: 2.5rem;
     }
     .navbar__link.show{
         display:flex;
@@ -37,6 +39,9 @@
     }
     .home__subtitle{
         font-size: 3rem;
+    }
+    .home__image img{
+        margin-top: 2rem;
     }
     .media{
         display:flex;
