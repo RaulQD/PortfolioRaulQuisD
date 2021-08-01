@@ -136,6 +136,12 @@
     .home__subtitle{
         font-size: 2rem;
     }
+    .about__description h2{
+        font-size: 1.8rem;
+    }
+    .about__description p{
+        font-size: 1.5rem;
+    }
     .skills{
         grid-template-columns: repeat(2,1fr);
         
