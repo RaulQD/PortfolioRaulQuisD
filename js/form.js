@@ -143,6 +143,9 @@ function enviarEmail(e){
   }
 
   function resetform(){
+      document.querySelectorAll('. form__correcto').forEach( (validar) => {
+          validar.classList.remove('form__correcto');
+      })
       groupForm.reset();
       iniciarApp();
   }
