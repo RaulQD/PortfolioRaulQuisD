@@ -312,7 +312,6 @@ section{
 }
 
 /*----CONTACTAME----*/
-
 .contact__content h2{
     text-align: center;
 }
@@ -389,15 +388,17 @@ section{
     outline: none;
     border-bottom: 2px solid #646464d8;
 }
+.contact__textarea{
+    height: 5rem;
+    resize: none;
+}
+
+/*VALIDADORES */
 .form__incorrecto{
     border-bottom: 1.5px solid #bb2929;
 }
 .form__correcto{
     border-bottom: 1.5px solid #1ed12d;
-}
-.contact__textarea{
-    height: 5rem;
-    resize: none;
 }
 .form__button{
     display: flex;
@@ -405,6 +406,24 @@ section{
     margin-top: 1rem;
     font-family: 'Open Sans', sans-serif;
 }
+.form__mensaje-error{
+    border: 1.5px solid red;
+    background: red;
+    color:#fff;
+    padding:15px;
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif; 
+}
+.form__mensaje-correcto{
+    border: 1.5px solid green;
+    background: green;
+    color: #fff;
+    padding:15px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
 #spinner {
     display: none;
     justify-content: center;

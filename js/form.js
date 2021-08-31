@@ -1,4 +1,3 @@
-
 //EXPRECIONES REGULARES 
 const regEx = {
     nombre: /^[a-zA-ZÁ-ÿ\s]{3,45}$/,
@@ -6,146 +5,132 @@ const regEx = {
     message: /^[a-zA-Z\s]{3,400}$/
 }
 
-// VARIABLES
+//GLOBALES
 const btnEnviar = document.querySelector('#btn_enviar');
 const groupForm = document.querySelector('#group__form');
 
-//VALIDAR CAMPOS
+
+//VARIABLES DE CADA CAMPO
 const nombre = document.querySelector('#nombre');
 const email = document.querySelector('#email');
-const message = document.querySelector('#message');
+const message = document.querySelector('#message')
 
-eventsListener();
-
-function eventsListener(){
-
-    //CUANDO LA APP INICIE
+eventListener();
+function eventListener(){
+    //INICIARA LA APP CUANDO EL CONTENIDO HTML SE HAYA CARGADO COMPLETAMENTE
     document.addEventListener('DOMContentLoaded', iniciarApp);
 
-   //VALIDAR INPUTS
+    //VALIDAR CAMPOS DEL FORMULARIO
+
     nombre.addEventListener('blur', validarForm);
     email.addEventListener('blur', validarForm);
     message.addEventListener('blur', validarForm);
 
-    //ENVIAR EMAIL
-    groupForm.addEventListener('submit', enviarEmail);
-
+    groupForm.addEventListener('submit', enviarMensaje);
 }
-//FUNCIONES
+
+//DESACTIVAR BOTON
 function iniciarApp(){
     btnEnviar.disabled = true;
     btnEnviar.classList.add('button__desactive');
 }
-
-//FUNCION QUE VALIDA EL FORMULARIO
+//VALIDAR LOS CAMPOS DEL FORMULARIO
 function validarForm(e){
-    //Elimina los errores....
     const error = document.querySelector('p.error');
     if(error){
         error.remove();
     }
-    if(e.target.value.length > 0){
+    if(e.target.value.length > 0){ // PARA SABER CUANTOS CARACTERES SE INGRESA EN EL CAMPO
         e.target.classList.remove('form__incorrecto');
-        e.target.classList.add('form__correcto');
+        e.target.classList.add('form__correcto')
     }else{
         e.target.classList.remove('form__correcto');
         e.target.classList.add('form__incorrecto');
-        mostrarError('Todos los campos son obligatorios'); 
+
+        mostrarError('Todos los datos son obligiatorios');
     }
-    if(e.target.type === 'text'){
+
+    //VALIDANDO LOS CAMPOS POR SU TIPO
+    if(e.target.type ==='text'){
+        //VERIFICANDO SI HAY UNA EXPRESIÓN REGULAR PARA VALIDAR 
         if(regEx.nombre.test(e.target.value)){
             e.target.classList.remove('form__incorrecto');
             e.target.classList.add('form__correcto');
         }else{
             e.target.classList.remove('form__correcto');
             e.target.classList.add('form__incorrecto');
-            mostrarError('Nombre no válido'); 
+
+            mostrarError('Nombre no valido');
         }
     }
     if(e.target.type ==='email'){
         if(regEx.email.test(e.target.value)){
-          e.target.classList.remove('form__incorrecto');
-          e.target.classList.add('form__correcto');
-      }else{
-          e.target.classList.remove('form__correcto');
-          e.target.classList.add('form__incorrecto');
-          mostrarError('Email no válido'); 
-      }
+            e.target.classList.remove('form__incorrecto');
+            e.target.classList.add('form__correcto');
+        }else{
+            e.target.classList.remove('form__correcto');
+            e.target.classList.add('form__incorrecto');
+
+            mostrarError('Email no válido');
+        }
     }
-    if(e.target.type ==='textarea'){
+    if(e.target.type === 'textarea'){
         if(regEx.message.test(e.target.value)){
-          e.target.classList.remove('form__incorrecto');
-          e.target.classList.add('form__correcto');
-      }else{
-          e.target.classList.remove('form__correcto');
-          e.target.classList.add('form__incorrecto');
-          mostrarError('Descripción no ingresado'); 
-      }
+            e.target.classList.remove('form__incorrecto');
+            e.target.classList.add('form__correcto');
+        }else{
+            e.target.classList.remove('form__correcto');
+            e.target.classList.add('form__incorrecto');
+
+            mostrarError('Descripción no ingresada');
+        }
     }
-    if( regEx.nombre.test(nombre.value) && regEx.email.test(email.value) && regEx.message.test(message.value)){
+    if(regEx.nombre.test(nombre.value) && regEx.email.test(email.value) && regEx.message.test(message.value)){
         btnEnviar.disabled = false;
         btnEnviar.classList.remove('button__desactive');
     }else{
         btnEnviar.disabled = true;
     }
 }
-
+//MENSAJE DE ERROR
 function mostrarError(mensaje){
     const formButton = document.querySelector('.form__button')
+    //SE CREA UN MENSAJE DE ERROR Y SE AGREGA LAS CLASES
     const mensajeError = document.createElement('p');
     mensajeError.textContent = mensaje;
-    mensajeError.classList.add('form__incorrecto', 'error');
-    mensajeError.style.border ='1.5px solid red';
-    mensajeError.style.background ='red';
-    mensajeError.style.padding = '10px';
-    mensajeError.style.fontWeight = 500;
-    mensajeError.style.fontFamily = 'Open Sans';
-    mensajeError.style.marginTop= '7px';
-    mensajeError.style.textAlign= 'center';
+    mensajeError.classList.add('form__mensaje-error', 'error');
 
-    const errores = document.querySelectorAll('.error');
+    // SE VALIDA EL MENSAJE 
+    const errores = document.querySelectorAll('.error')
     if(errores.length === 0){
         groupForm.insertBefore(mensajeError,formButton);
     }
-} 
+}
 
+//ENVIAR MENSAJE
 
-//ENVIA EL EMAIL
-
-function enviarEmail(e){
+function enviarMensaje(e){
     e.preventDefault();
-
-    //Muestra el spinner
     const spinner = document.querySelector('#spinner');
-    spinner.style.display ='flex';
-
-    //despues de 3 segundos Mostrar el mensaje y ocultar
+    spinner.style.display = 'flex';
+    //MENSAJE DE ENVIO DE INFORMACIÓN
     setTimeout(() => {
-        spinner.style.display ='none';
+        spinner.style.display = 'none';
+        const enviarMensaje = document.createElement('p');
+        enviarMensaje.textContent = 'El mensaje fue enviado correctamente';
+        enviarMensaje.classList.add('form__mensaje-correcto');
+        groupForm.insertBefore(enviarMensaje,spinner);
 
-        //crear mensje de envio
-        const parrafo = document.createElement('p');
-        parrafo.textContent = 'El mensaje fue enviado correctamente';
-        parrafo.style.border = '1.5px solid green';
-        parrafo.style.background = 'green';
-        parrafo.style.textAlign = 'center';
-        parrafo.style.fontWeight = 500;
-        parrafo.style.fontFamily = 'Open Sans';
-        parrafo.style.padding = '10px';
-        
-        //insertar el parrafo antes del spiner
-        groupForm.insertBefore(parrafo, spinner);
         setTimeout(() => {
-            parrafo.remove();
-            resetform();
+            enviarMensaje.remove();
+            resetBoton();
         }, 2000);
-    }, 3000 );
-  }
+    },3000);
 
-  function resetform(){
-      document.querySelectorAll('. form__correcto').forEach( (validar) => {
-          validar.classList.remove('form__correcto');
-      })
-      groupForm.reset();
-      iniciarApp();
-  }
+}
+//RESETEAR BOTON ENVIAR 
+function resetBoton(){
+    groupForm.reset();
+
+    iniciarApp();
+}
